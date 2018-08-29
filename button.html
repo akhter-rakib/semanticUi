@@ -1,13 +1,76 @@
 <html>
+<!--https://semantic-ui.com/elements/button.html-->
 <head>
     <title>Semantic cdn link </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.css"/>
+    <script>
+        function test() {
+            alert("Hello");
+        }
+    </script>
     <head>
 <body>
 <div class="ui container">
-    <button class="ui button">Click Me !</button>
+    <h3>Animated</h3>
+    <p>A button can animate to show hidden content</p>
+    <p> it will only be keyboard focusable if you use a tag or you add the property tabindex="0". Keyboard accessible
+        buttons will preserve focus styles after click, which may be visually jarring.</p>
+    <div class="ui animated button">
+        <div class="visible content">Next</div>
+        <div class="hidden content">
+            <i class="right arrow icon"></i>
+        </div>
+    </div>
+    <!-- ############################################################ --->
+    <h3>Labeled</h3>
+    <p>A button can appear alongside a label</p>
+    <div class="ui labeled button" tabindex="0">
+        <div class="ui button">
+            <i class="heart icon"></i> Like
+        </div>
+        <a class="ui basic label"> 2,048 </a>
+    </div>
+    <!--############################################################### -->
+    <h3>Basic</h3>
+    <p>A basic button is less pronounced</p>
+    <div class="ui basic button">
+        <i class="user icon"></i>Add User
+    </div>
+    <div class="ui positive basic button" onclick="test()">Primary</div>
+    <!--############################################################### -->
+    <h3>Groups</h3>
+    <h4>Button</h4>
+    <p>Buttons can exist together as a group</p>
+    <div class="ui buttons">
+        <button class="ui button">One</button>
+        <button class="ui button">Two</button>
+        <button class="ui button">Three</button>
+    </div>
+    <!--############################################################### -->
+    <h3>Conditional Button</h3>
+    <div class="ui buttons">
+        <button class="ui button">Cancel</button>
+        <div class="or"></div>
+        <button class="ui positive button">Save</button>
+    </div>
+    <!--############################################################### -->
+    <h3>Active Button</h3>
+    <button class="ui active button">
+        <i class="user icon"></i>
+        Follow
+    </button>
+    <!--############################################################### -->
+    <h3>Loading Button </h3>
+    <button class="ui primary loading button">Loading</button>
+    <!--############################################################### -->
+    <h3>Size</h3>
+    <p>mini tiny small medium large big huge massive </p>
+    <button class="medium ui button">
+        Medium
+    </button>
+    <!--################################################################# -->
+    <h3>Colored</h3>
+    <button class="ui purple button">Purple</button>
 </div>
-
-
 </body>
 </html>
